@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="ko"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS 기본</title>
+
+    <!-- Bootstrap CSS -->
+    
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script></head>
+<body data-element-id="1" class="mt-0 mr-0 mb-0 ml-0 box-border font-[&quot;Noto_Sans_KR&quot;,_&quot;Apple_SD_Gothic_Neo&quot;,_&quot;Malgun_gothic&quot;,_Helvetica,_Dotum,_sans-serif] text-[0.875rem] leading-[1.5715] text-[rgb(51,_51,_51)] text-left bg-[rgb(245,_245,_245)] !min-w-[992px]">
+
+<div class="box-border" data-element-id="2">
+    <div class="flex box-border flex-wrap" data-element-id="3">
+        <div class="box-border flex-shrink-0 w-full max-w-full [flex-basis:100%] relative" data-element-id="4">
+
+			<!-- 헤더 -->
+			<div class="box-border" data-element-id="5">
+				<div class="box-border" data-element-id="6">
+					<img src="/public/front/dabory/pos/images/logo_pos.webp" alt="로고" data-element-id="7" class="box-border align-middle">
+				</div>
+				<div class="box-border" data-element-id="8">
+					<div data-element-id="9" class="box-border">
+						<dl data-element-id="10" class="box-border mt-0 mb-0 list-none">
+							<dt data-element-id="11" class="box-border font-bold list-none">매장명 : </dt>
+							<dd data-element-id="12" class="box-border ml-0 list-none">(주) 다보리</dd>
+						</dl>
+						<dl data-element-id="13" class="box-border mt-0 mb-0 list-none">
+							<dt data-element-id="14" class="box-border font-bold list-none">포스번호 : </dt>
+							<dd data-element-id="15" class="box-border ml-0 list-none">01</dd>
+						</dl>
+					</div>
+					<div data-element-id="16" class="box-border">
+						<dl data-element-id="17" class="box-border mt-0 mb-0 list-none">
+							<dt data-element-id="18" class="box-border font-bold list-none">판매원 : </dt>
+							<dd data-element-id="19" class="box-border ml-0 list-none">홍길동</dd>
+						</dl>
+						<dl data-element-id="20" class="box-border mt-0 mb-0 list-none">
+							<dt data-element-id="21" class="box-border font-bold list-none">영업일자 : </dt>
+							<dd data-element-id="22" class="box-border ml-0 list-none">2025-10-20 (목)</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="box-border" data-element-id="23">2025-09-10 14:32 (목)</div>
+			</div>
+			<!--// 헤더 끝 -->
+
+			<!-- main -->
+			<div class="box-border" data-element-id="24">
+
+				<!-- ++++ 왼쪽 ++++-->
+				<div class="box-border" data-element-id="25">
+					<!-- 품목 리스트 -->
+					<div class="flex box-border relative flex-col h-[var(--bs-card-height)] break-words" data-element-id="26">
+						<div class="box-border" data-element-id="27">
+							<table data-element-id="28" class="border-collapse [caption-side:bottom] [font-family:inherit!important]">
+								<thead data-element-id="29" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] sticky top-0">
+									<tr data-element-id="30" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="31">번호</th>
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="32">메뉴명</th>
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="33">단가</th>
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="34">수량</th>
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="35">할인</th>
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="36">금액</th>
+										<th class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="37">비고</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="box-border" data-element-id="38">
+							<table data-element-id="39" class="border-collapse [caption-side:bottom] [font-family:inherit!important]">
+								<tbody data-element-id="40" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+									<tr data-element-id="41" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="42">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="43">품목명이 나옵니다.</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="44">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="45">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="46">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="47">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="48">보류</td>
+									</tr>
+
+									<tr data-element-id="49" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="50">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="51">품목명이 나옵니다.</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="52">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="53">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="54">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="55">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="56">보류</td>
+									</tr>
+									<tr data-element-id="57" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="58">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="59">품목명이 나옵니다.</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="60">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="61">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="62">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="63">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="64">보류</td>
+									</tr>
+									<tr data-element-id="65" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="66">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="67">품목명이 나옵니다.</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="68">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="69">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="70">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="71">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="72">보류</td>
+									</tr>
+									<tr data-element-id="73" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="74">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="75">품목명이 나옵니다.</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="76">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="77">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="78">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="79">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="80">보류</td>
+									</tr>
+									<tr data-element-id="81" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="82">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="83">품목명이 나옵니다.</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="84">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="85">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="86">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="87">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="88">보류</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="box-border" data-element-id="89">
+							<table data-element-id="90" class="border-collapse [caption-side:bottom] [font-family:inherit!important]">
+								<tfoot data-element-id="91" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+									<tr data-element-id="92" class="box-border [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid]">
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="93"></td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="94">합계</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="95">000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="96">000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="97">-00,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="98">0,000,000</td>
+										<td class="box-border [border-top-color:inherit] [border-right-color:inherit] [border-bottom-color:inherit] [border-left-color:inherit] [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] overflow-ellipsis leading-[1.2em] h-[3.6em] overflow-x-hidden overflow-y-hidden break-words" data-element-id="99"></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="box-border" data-element-id="100">
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="101">전체취소</button>
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="102">선택취소</button>
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="103">할인처리</button>
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="104">수량변경</button>
+						   <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="105"><img src="/public/front/dabory/pos/images/icn_minus.webp" alt="더하기" data-element-id="106" class="box-border align-middle"></button>
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="107"><img src="/public/front/dabory/pos/images/icn_plus.webp" alt="빼기" data-element-id="108" class="box-border align-middle"></button>
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="109"><img src="/public/front/dabory/pos/images/icn_up.webp" alt="위로" data-element-id="110" class="box-border align-middle"></button>
+						  <button type="button" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="111"><img src="/public/front/dabory/pos/images/icn_down.webp" alt="아래로" data-element-id="112" class="box-border align-middle"></button>
+						</div>
+					</div>
+					<!-- 품목 리스트 끝 -->
+
+					<!-- 왼쪽 하단 -->
+					<div class="box-border" data-element-id="113">
+						<!-- 결제내용 -->
+						<div class="flex box-border relative flex-col h-[var(--bs-card-height)] break-words" data-element-id="114">
+							<!--탭 메뉴 -->
+							<ul class="flex list-none box-border pl-0 mt-0 mb-5 flex-wrap border-b [border-bottom-style:solid] [border-bottom-color:rgb(221,_221,_221)]" id="paymentTab" role="tablist" data-element-id="115">
+								<li class="box-border list-none" role="presentation" data-element-id="116">
+									<button class="[appearance:button] -mb-px text-[var(--bs-nav-link-font-size)] [font-family:inherit] text-[rgb(51,_51,_51)] [line-height:inherit] block cursor-pointer border-t border-r border-b border-l [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] [border-top-color:rgb(221,_221,_221)] [border-right-color:rgb(221,_221,_221)] [border-bottom-color:rgb(255,_255,_255)] [border-left-color:rgb(221,_221,_221)] bg-[rgb(255,_255,_255)] pt-3 pr-[1.875rem] pb-3 pl-[1.875rem] [text-decoration-color:initial] duration-150 ease-in-out relative" id="tab1" data-bs-toggle="tab" data-bs-target="#tab1_cont" type="button" role="tab" aria-controls="tab1_cont" aria-selected="true" data-element-id="117">결제정보</button>
+								</li>
+								<li class="box-border list-none" role="presentation" data-element-id="118">
+									<button class="[appearance:button] -mb-px text-[var(--bs-nav-link-font-size)] [font-family:inherit] text-[rgb(119,_119,_119)] [line-height:inherit] block cursor-pointer border-t border-r border-b border-l [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] [border-top-color:transparent] [border-right-color:transparent] [border-bottom-color:transparent] [border-left-color:transparent] [background-color:initial] pt-3 pr-[1.875rem] pb-3 pl-[1.875rem] [text-decoration-color:initial] duration-150 ease-in-out relative" id="tab2" data-bs-toggle="tab" data-bs-target="#tab2_cont" type="button" role="tab" aria-controls="tab2_cont" aria-selected="false" data-element-id="119">결제내역</button>
+								</li>
+								<li class="box-border list-none" role="presentation" data-element-id="120">
+									<button class="[appearance:button] -mb-px text-[var(--bs-nav-link-font-size)] [font-family:inherit] text-[rgb(119,_119,_119)] [line-height:inherit] block cursor-pointer border-t border-r border-b border-l [border-top-style:solid] [border-right-style:solid] [border-bottom-style:solid] [border-left-style:solid] [border-top-color:transparent] [border-right-color:transparent] [border-bottom-color:transparent] [border-left-color:transparent] [background-color:initial] pt-3 pr-[1.875rem] pb-3 pl-[1.875rem] [text-decoration-color:initial] duration-150 ease-in-out relative" id="tab3" data-bs-toggle="tab" data-bs-target="#tab3_cont" type="button" role="tab" aria-controls="tab3_cont" aria-selected="false" data-element-id="121">회원정보</button>
+								</li>
+							</ul>
+							<!-- 내용 -->
+							<div class="box-border" id="paymentTabContent" data-element-id="122">
+								<div class="box-border duration-150 ease-linear [transition-property:opacity]" id="tab1_cont" role="tabpanel" aria-labelledby="tab1" data-element-id="123">
+									<dl data-element-id="124" class="box-border mt-0 mb-0 list-none">
+										<dt class="box-border font-bold list-none" data-element-id="125">총 금액</dt>
+										<dd data-element-id="126" class="box-border ml-0 list-none">0,000,000원</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="127">
+										<dt data-element-id="128" class="box-border font-bold list-none">할인금액</dt>
+										<dd data-element-id="129" class="box-border ml-0 list-none">- 000,000원</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="130">
+										<dt data-element-id="131" class="box-border font-bold list-none">받을금액</dt>
+										<dd data-element-id="132" class="box-border ml-0 list-none">0,000,000원</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="133">
+										<dt data-element-id="134" class="box-border font-bold list-none">받은금액</dt>
+										<dd data-element-id="135" class="box-border ml-0 list-none">0,000,000원</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="136">
+										<dt data-element-id="137" class="box-border font-bold list-none">거스름돈</dt>
+										<dd data-element-id="138" class="box-border ml-0 list-none">0,000,000원</dd>
+									</dl>
+								</div>
+								<div class="hidden box-border duration-150 ease-linear [transition-property:opacity] opacity-0" id="tab2_cont" role="tabpanel" aria-labelledby="tab2" data-element-id="139">
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="140">
+										<dt data-element-id="141" class="box-border font-bold list-none">신용카드</dt>
+										<dd data-element-id="142" class="box-border ml-0 list-none">0,000,000원</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="143">
+										<dt data-element-id="144" class="box-border font-bold list-none">현금</dt>
+										<dd data-element-id="145" class="box-border ml-0 list-none">- 000,000원</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="146">
+										<dt data-element-id="147" class="box-border font-bold list-none">결제금액</dt>
+										<dd data-element-id="148" class="box-border ml-0 list-none">0,000,000원</dd>
+									</dl>
+								</div>
+								<div class="hidden box-border duration-150 ease-linear [transition-property:opacity] opacity-0" id="tab3_cont" role="tabpanel" aria-labelledby="tab3" data-element-id="149">
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="150">
+										<dt data-element-id="151" class="box-border font-bold list-none">이름</dt>
+										<dd data-element-id="152" class="box-border ml-0 list-none">홍두깨</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="153">
+										<dt data-element-id="154" class="box-border font-bold list-none">연락처</dt>
+										<dd data-element-id="155" class="box-border ml-0 list-none">010-0000-0000</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="156">
+										<dt data-element-id="157" class="box-border font-bold list-none">주소</dt>
+										<dd data-element-id="158" class="box-border ml-0 list-none">경상북도 대한시 민국구 만세동 동해물과 백두산이 마르고 닳도록</dd>
+									</dl>
+									<dl class="box-border mt-0 mb-0 list-none" data-element-id="159">
+										<dt data-element-id="160" class="box-border font-bold list-none">비고</dt>
+										<dd data-element-id="161" class="box-border ml-0 list-none">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라 만세. 무궁화 삼천리 화려 강산. 대한사람 대한으로 길이 보전하세.</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<!-- 계산기 -->
+						<div class="flex box-border relative flex-col h-[var(--bs-card-height)] break-words" data-element-id="162">
+							<div class="box-border" data-element-id="163">0</div>
+							<div class="box-border" data-element-id="164">
+								<button data-element-id="165" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">7</button><button data-element-id="166" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">8</button><button data-element-id="167" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">9</button>
+								<button data-element-id="168" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">4</button><button data-element-id="169" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">5</button><button data-element-id="170" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">6</button>
+								<button data-element-id="171" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">1</button><button data-element-id="172" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">2</button><button data-element-id="173" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">3</button>
+								<button data-element-id="174" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">0</button><button data-element-id="175" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">0</button><button data-element-id="176" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">CC</button>
+								<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="177"><img src="/public/front/dabory/pos/images/icn_up.webp" alt="지우기" data-element-id="178" class="box-border align-middle"></button>
+								<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="179">Enter</button>
+							</div>
+						</div>
+
+						<!-- 버튼 -->
+						<div class="flex box-border relative flex-col h-[var(--bs-card-height)] break-words" data-element-id="180">
+							<button data-element-id="181" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] inline-block cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]"><img src="/public/front/dabory/pos/images/icn_print.webp" alt="프린트" data-element-id="182" class="box-border align-middle">프린트</button>
+							<button data-element-id="183" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] inline-block cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">웹정보</button>
+							<button data-element-id="184" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] inline-block cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">환전</button>
+							<button data-element-id="185" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] inline-block cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">주문접수</button>
+							<button data-element-id="186" class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] inline-block cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]">확장메뉴</button>
+						</div>
+					</div>
+					<!--// 왼쪽 하단 끝 -->
+				</div>
+				<!--// ++++ 왼쪽 끝 ++++-->
+
+				<!--++++ 오른쪽 ++++-->
+				<div class="flex box-border relative flex-col h-[var(--bs-card-height)] break-words" data-element-id="187">
+					<!-- 카테고리 -->
+					<div class="box-border" data-element-id="188">
+						<div class="box-border relative overflow-x-hidden overflow-y-hidden list-none" data-element-id="189">
+							<div class="flex relative w-full h-full [transition-property:transform]" data-element-id="190">
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="191">
+									<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="192" class="box-border align-middle">
+									커피
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="193">
+									<img src="/public/front/dabory/pos/images/icn_cloth.webp" alt="옷" data-element-id="194" class="box-border align-middle">
+									옷
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="195">
+									<img src="/public/front/dabory/pos/images/icn_cosmetic.webp" alt="화장품" data-element-id="196" class="box-border align-middle">
+									화장품
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="197">
+									<img src="/public/front/dabory/pos/images/icn_furniture.webp" alt="가구" data-element-id="198" class="box-border align-middle">
+									가구
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="199">
+									<img src="/public/front/dabory/pos/images/icn_camping.webp" alt="캠핑용품" data-element-id="200" class="box-border align-middle">
+									캠핑용품
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="201">
+									<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="202" class="box-border align-middle">
+									커피1
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="203">
+									<img src="/public/front/dabory/pos/images/icn_cloth.webp" alt="옷" data-element-id="204" class="box-border align-middle">
+									옷1
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="205">
+									<img src="/public/front/dabory/pos/images/icn_cosmetic.webp" alt="화장품" data-element-id="206" class="box-border align-middle">
+									화장품1
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="207">
+									<img src="/public/front/dabory/pos/images/icn_furniture.webp" alt="가구" data-element-id="208" class="box-border align-middle">
+									가구1
+								</div>
+								<div class="box-border flex-shrink-0 w-full h-full relative [transition-property:transform] [transform:translateZ(0px)] [backface-visibility:hidden]" data-element-id="209">
+									<img src="/public/front/dabory/pos/images/icn_camping.webp" alt="캠핑용품" data-element-id="210" class="box-border align-middle">
+									캠핑용품1
+								</div>
+							</div>
+
+						</div>
+						<div class="flex box-border cursor-pointer absolute top-[var(--swiper-navigation-top-offset,50%)] w-[calc(var(--swiper-navigation-size)/ 44 * 27)] h-[var(--swiper-navigation-size)] mt-[calc(0px - (var(--swiper-navigation-size)/ 2))] z-10 items-center justify-center right-[var(--swiper-navigation-sides-offset,10px)] left-auto" data-element-id="211"></div>
+							<div class="flex box-border absolute top-[var(--swiper-navigation-top-offset,50%)] w-[calc(var(--swiper-navigation-size)/ 44 * 27)] h-[var(--swiper-navigation-size)] mt-[calc(0px - (var(--swiper-navigation-size)/ 2))] z-10 items-center justify-center left-[var(--swiper-navigation-sides-offset,10px)] right-auto opacity-[0.35] pointer-events-none" data-element-id="212"></div>
+					</div>
+
+					<!-- 메뉴 -->
+					<div class="box-border" data-element-id="213">
+						<div class="box-border" data-element-id="214">
+							<div class="box-border" data-element-id="215">아메리카노</div>
+							<div class="box-border" data-element-id="216">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="217" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="218">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="219">
+							<div class="box-border" data-element-id="220">아메리카노</div>
+							<div class="box-border" data-element-id="221">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="222" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="223">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="224">
+							<div class="box-border" data-element-id="225">아메리카노</div>
+							<div class="box-border" data-element-id="226">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="227" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="228">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="229">
+							<div class="box-border" data-element-id="230">아메리카노</div>
+							<div class="box-border" data-element-id="231">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="232" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="233">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="234">
+							<div class="box-border" data-element-id="235">아메리카노</div>
+							<div class="box-border" data-element-id="236">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="237" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="238">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="239">
+							<div class="box-border" data-element-id="240">아메리카노</div>
+							<div class="box-border" data-element-id="241">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="242" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="243">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="244">
+							<div class="box-border" data-element-id="245">아메리카노</div>
+							<div class="box-border" data-element-id="246">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="247" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="248">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="249">
+							<div class="box-border" data-element-id="250">아메리카노</div>
+							<div class="box-border" data-element-id="251">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="252" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="253">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="254">
+							<div class="box-border" data-element-id="255">아메리카노</div>
+							<div class="box-border" data-element-id="256">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="257" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="258">2,500원</div>
+						</div>
+						<div class="box-border" data-element-id="259">
+							<div class="box-border" data-element-id="260">아메리카노</div>
+							<div class="box-border" data-element-id="261">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="262" class="box-border align-middle"></div>
+							<div class="box-border" data-element-id="263">2,500원</div>
+						</div>
+						<!-- 빈 셀인 경우 -->
+						<div class="box-border" data-element-id="264">
+						</div>
+						<!--// 빈 셀인 경우 끝 -->
+						<div class="box-border" data-element-id="265">
+						</div>
+						<div class="box-border" data-element-id="266">
+						</div>
+						<div class="box-border" data-element-id="267">
+						</div>
+						<div class="box-border" data-element-id="268">
+						</div>
+						<div class="box-border" data-element-id="269">
+						</div>
+						<div class="box-border" data-element-id="270">
+						</div>
+						<div class="box-border" data-element-id="271">
+						</div>
+
+					</div>
+
+					<!-- 버튼 -->
+					<div class="box-border" data-element-id="272">
+						<div data-element-id="273" class="box-border"></div>
+						<div data-element-id="274" class="box-border"></div>
+						<div data-element-id="275" class="box-border"></div>
+						<div data-element-id="276" class="box-border">
+							<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="277">
+								<span data-element-id="278" class="box-border">주문</span>
+								<img src="/public/front/dabory/pos/images/icn_order.webp" alt="주문" data-element-id="279" class="box-border align-middle">
+							</button>
+						</div>
+						<div data-element-id="280" class="box-border">
+							<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="281">
+								<span data-element-id="282" class="box-border">카드</span>
+								<img src="/public/front/dabory/pos/images/icn_credit.webp" alt="신용카드" data-element-id="283" class="box-border align-middle">
+							</button>
+						</div>
+						<div data-element-id="284" class="box-border">
+							<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="285">
+								<span data-element-id="286" class="box-border">현금</span>
+								<img src="/public/front/dabory/pos/images/icn_cash.webp" alt="현금" data-element-id="287" class="box-border align-middle">
+							</button>
+						</div>
+						<div data-element-id="288" class="box-border">
+							<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="289">
+								<span data-element-id="290" class="box-border">복합</span>
+								<img src="/public/front/dabory/pos/images/icn_mix.webp" alt="복합결제" data-element-id="291" class="box-border align-middle">
+							</button>
+						</div>
+						<div data-element-id="292" class="box-border">
+							<button class="[appearance:button] [font-size:inherit] [font-family:inherit] [line-height:inherit] cursor-pointer [border-top-width:initial] [border-right-width:initial] [border-bottom-width:initial] [border-left-width:initial] [border-top-style:none] [border-right-style:none] [border-bottom-style:none] [border-left-style:none]" data-element-id="293">
+								<span data-element-id="294" class="box-border">영수증</span>
+								<img src="/public/front/dabory/pos/images/icn_receipt.webp" alt="영수증관리" data-element-id="295" class="box-border align-middle">
+							</button>
+						</div>
+					</div>
+				</div>
+				<!--// ++++ 오른쪽 끝 ++++-->
+			</div>
+			<!--// main 끝 -->
+
+		</div>
+	</div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" data-element-id="296" class="box-border"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" data-element-id="297" class="box-border"></script>
+
+<script data-element-id="298" class="box-border">
+var swiper = new Swiper(".catSwiper", {
+	slidesPerView: 5,
+	spaceBetween: 3.6,
+	slidesOffsetBefore: 0.5,
+    navigation: {
+		nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+
+
+</body></html>

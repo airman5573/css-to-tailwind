@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="ko"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS 기본</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-element-id="1">
+
+<div class="content pos basic" data-element-id="2">
+    <div class="row" data-element-id="3">
+        <div class="col-xl-12" data-element-id="4">
+
+			<!-- 헤더 -->
+			<div class="header" data-element-id="5">
+				<div class="logo_wrap" data-element-id="6">
+					<img src="/public/front/dabory/pos/images/logo_pos.webp" alt="로고" data-element-id="7">
+				</div>
+				<div class="info" data-element-id="8">
+					<div data-element-id="9">
+						<dl data-element-id="10">
+							<dt data-element-id="11">매장명 : </dt>
+							<dd data-element-id="12">(주) 다보리</dd>
+						</dl>
+						<dl data-element-id="13">
+							<dt data-element-id="14">포스번호 : </dt>
+							<dd data-element-id="15">01</dd>
+						</dl>
+					</div>
+					<div data-element-id="16">
+						<dl data-element-id="17">
+							<dt data-element-id="18">판매원 : </dt>
+							<dd data-element-id="19">홍길동</dd>
+						</dl>
+						<dl data-element-id="20">
+							<dt data-element-id="21">영업일자 : </dt>
+							<dd data-element-id="22">2025-10-20 (목)</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="time" data-element-id="23">2025-09-10 14:32 (목)</div>
+			</div>
+			<!--// 헤더 끝 -->
+
+			<!-- main -->
+			<div class="main" data-element-id="24">
+
+				<!-- ++++ 왼쪽 ++++-->
+				<div class="left_panel" data-element-id="25">
+					<!-- 품목 리스트 -->
+					<div class="card order" data-element-id="26">
+						<div class="tb_header" data-element-id="27">
+							<table data-element-id="28">
+								<thead data-element-id="29">
+									<tr data-element-id="30">
+										<th class="num" data-element-id="31">번호</th>
+										<th class="name" data-element-id="32">메뉴명</th>
+										<th class="unite" data-element-id="33">단가</th>
+										<th class="ammount" data-element-id="34">수량</th>
+										<th class="discount" data-element-id="35">할인</th>
+										<th class="price" data-element-id="36">금액</th>
+										<th class="extra scroll-fix" data-element-id="37">비고</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="tb_body" data-element-id="38">
+							<table data-element-id="39">
+								<tbody data-element-id="40">
+									<tr data-element-id="41">
+										<td class="num" data-element-id="42">000</td>
+										<td class="name" data-element-id="43">품목명이 나옵니다.</td>
+										<td class="unite" data-element-id="44">000,000</td>
+										<td class="ammount" data-element-id="45">000</td>
+										<td class="discount" data-element-id="46">-00,000</td>
+										<td class="price" data-element-id="47">0,000,000</td>
+										<td class="extra" data-element-id="48">보류</td>
+									</tr>
+
+									<tr data-element-id="49">
+										<td class="num" data-element-id="50">000</td>
+										<td class="name" data-element-id="51">품목명이 나옵니다.</td>
+										<td class="unite" data-element-id="52">000,000</td>
+										<td class="ammount" data-element-id="53">000</td>
+										<td class="discount" data-element-id="54">-00,000</td>
+										<td class="price" data-element-id="55">0,000,000</td>
+										<td class="extra" data-element-id="56">보류</td>
+									</tr>
+									<tr data-element-id="57">
+										<td class="num" data-element-id="58">000</td>
+										<td class="name" data-element-id="59">품목명이 나옵니다.</td>
+										<td class="unite" data-element-id="60">000,000</td>
+										<td class="ammount" data-element-id="61">000</td>
+										<td class="discount" data-element-id="62">-00,000</td>
+										<td class="price" data-element-id="63">0,000,000</td>
+										<td class="extra" data-element-id="64">보류</td>
+									</tr>
+									<tr data-element-id="65">
+										<td class="num" data-element-id="66">000</td>
+										<td class="name" data-element-id="67">품목명이 나옵니다.</td>
+										<td class="unite" data-element-id="68">000,000</td>
+										<td class="ammount" data-element-id="69">000</td>
+										<td class="discount" data-element-id="70">-00,000</td>
+										<td class="price" data-element-id="71">0,000,000</td>
+										<td class="extra" data-element-id="72">보류</td>
+									</tr>
+									<tr data-element-id="73">
+										<td class="num" data-element-id="74">000</td>
+										<td class="name" data-element-id="75">품목명이 나옵니다.</td>
+										<td class="unite" data-element-id="76">000,000</td>
+										<td class="ammount" data-element-id="77">000</td>
+										<td class="discount" data-element-id="78">-00,000</td>
+										<td class="price" data-element-id="79">0,000,000</td>
+										<td class="extra" data-element-id="80">보류</td>
+									</tr>
+									<tr data-element-id="81">
+										<td class="num" data-element-id="82">000</td>
+										<td class="name" data-element-id="83">품목명이 나옵니다.</td>
+										<td class="unite" data-element-id="84">000,000</td>
+										<td class="ammount" data-element-id="85">000</td>
+										<td class="discount" data-element-id="86">-00,000</td>
+										<td class="price" data-element-id="87">0,000,000</td>
+										<td class="extra" data-element-id="88">보류</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tb_footer" data-element-id="89">
+							<table data-element-id="90">
+								<tfoot data-element-id="91">
+									<tr data-element-id="92">
+										<td class="num" data-element-id="93"></td>
+										<td class="name" data-element-id="94">합계</td>
+										<td class="unite" data-element-id="95">000,000</td>
+										<td class="ammount" data-element-id="96">000</td>
+										<td class="discount" data-element-id="97">-00,000</td>
+										<td class="price" data-element-id="98">0,000,000</td>
+										<td class="extra scroll-fix" data-element-id="99"></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="action_buttons" data-element-id="100">
+						  <button type="button" class="btn_primary" data-element-id="101">전체취소</button>
+						  <button type="button" class="btn_primary" data-element-id="102">선택취소</button>
+						  <button type="button" class="btn_primary" data-element-id="103">할인처리</button>
+						  <button type="button" class="btn_primary" data-element-id="104">수량변경</button>
+						   <button type="button" class="btn_secondary" data-element-id="105"><img src="/public/front/dabory/pos/images/icn_minus.webp" alt="더하기" data-element-id="106"></button>
+						  <button type="button" class="btn_secondary" data-element-id="107"><img src="/public/front/dabory/pos/images/icn_plus.webp" alt="빼기" data-element-id="108"></button>
+						  <button type="button" class="btn_secondary" data-element-id="109"><img src="/public/front/dabory/pos/images/icn_up.webp" alt="위로" data-element-id="110"></button>
+						  <button type="button" class="btn_secondary" data-element-id="111"><img src="/public/front/dabory/pos/images/icn_down.webp" alt="아래로" data-element-id="112"></button>
+						</div>
+					</div>
+					<!-- 품목 리스트 끝 -->
+
+					<!-- 왼쪽 하단 -->
+					<div class="payment" data-element-id="113">
+						<!-- 결제내용 -->
+						<div class="card pay_info" data-element-id="114">
+							<!--탭 메뉴 -->
+							<ul class="nav nav-tabs" id="paymentTab" role="tablist" data-element-id="115">
+								<li class="nav-item" role="presentation" data-element-id="116">
+									<button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#tab1_cont" type="button" role="tab" aria-controls="tab1_cont" aria-selected="true" data-element-id="117">결제정보</button>
+								</li>
+								<li class="nav-item" role="presentation" data-element-id="118">
+									<button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#tab2_cont" type="button" role="tab" aria-controls="tab2_cont" aria-selected="false" data-element-id="119">결제내역</button>
+								</li>
+								<li class="nav-item" role="presentation" data-element-id="120">
+									<button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#tab3_cont" type="button" role="tab" aria-controls="tab3_cont" aria-selected="false" data-element-id="121">회원정보</button>
+								</li>
+							</ul>
+							<!-- 내용 -->
+							<div class="tab-content" id="paymentTabContent" data-element-id="122">
+								<div class="amount_info tab-pane fade show active" id="tab1_cont" role="tabpanel" aria-labelledby="tab1" data-element-id="123">
+									<dl data-element-id="124">
+										<dt class="total" data-element-id="125">총 금액</dt>
+										<dd data-element-id="126">0,000,000원</dd>
+									</dl>
+									<dl class="discount" data-element-id="127">
+										<dt data-element-id="128">할인금액</dt>
+										<dd data-element-id="129">- 000,000원</dd>
+									</dl>
+									<dl class="to_receive" data-element-id="130">
+										<dt data-element-id="131">받을금액</dt>
+										<dd data-element-id="132">0,000,000원</dd>
+									</dl>
+									<dl class="received" data-element-id="133">
+										<dt data-element-id="134">받은금액</dt>
+										<dd data-element-id="135">0,000,000원</dd>
+									</dl>
+									<dl class="change" data-element-id="136">
+										<dt data-element-id="137">거스름돈</dt>
+										<dd data-element-id="138">0,000,000원</dd>
+									</dl>
+								</div>
+								<div class="method_info tab-pane fade" id="tab2_cont" role="tabpanel" aria-labelledby="tab2" data-element-id="139">
+									<dl class="credit" data-element-id="140">
+										<dt data-element-id="141">신용카드</dt>
+										<dd data-element-id="142">0,000,000원</dd>
+									</dl>
+									<dl class="cash" data-element-id="143">
+										<dt data-element-id="144">현금</dt>
+										<dd data-element-id="145">- 000,000원</dd>
+									</dl>
+									<dl class="total" data-element-id="146">
+										<dt data-element-id="147">결제금액</dt>
+										<dd data-element-id="148">0,000,000원</dd>
+									</dl>
+								</div>
+								<div class="mem_info tab-pane fade" id="tab3_cont" role="tabpanel" aria-labelledby="tab3" data-element-id="149">
+									<dl class="name" data-element-id="150">
+										<dt data-element-id="151">이름</dt>
+										<dd data-element-id="152">홍두깨</dd>
+									</dl>
+									<dl class="mob" data-element-id="153">
+										<dt data-element-id="154">연락처</dt>
+										<dd data-element-id="155">010-0000-0000</dd>
+									</dl>
+									<dl class="add" data-element-id="156">
+										<dt data-element-id="157">주소</dt>
+										<dd data-element-id="158">경상북도 대한시 민국구 만세동 동해물과 백두산이 마르고 닳도록</dd>
+									</dl>
+									<dl class="etc" data-element-id="159">
+										<dt data-element-id="160">비고</dt>
+										<dd data-element-id="161">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라 만세. 무궁화 삼천리 화려 강산. 대한사람 대한으로 길이 보전하세.</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<!-- 계산기 -->
+						<div class="card calcu" data-element-id="162">
+							<div class="result" data-element-id="163">0</div>
+							<div class="keypad" data-element-id="164">
+								<button data-element-id="165">7</button><button data-element-id="166">8</button><button data-element-id="167">9</button>
+								<button data-element-id="168">4</button><button data-element-id="169">5</button><button data-element-id="170">6</button>
+								<button data-element-id="171">1</button><button data-element-id="172">2</button><button data-element-id="173">3</button>
+								<button data-element-id="174">0</button><button data-element-id="175">0</button><button data-element-id="176">CC</button>
+								<button class="back" data-element-id="177"><img src="/public/front/dabory/pos/images/icn_up.webp" alt="지우기" data-element-id="178"></button>
+								<button class="enter" data-element-id="179">Enter</button>
+							</div>
+						</div>
+
+						<!-- 버튼 -->
+						<div class="card pay_buttons" data-element-id="180">
+							<button data-element-id="181"><img src="/public/front/dabory/pos/images/icn_print.webp" alt="프린트" data-element-id="182">프린트</button>
+							<button data-element-id="183">웹정보</button>
+							<button data-element-id="184">환전</button>
+							<button data-element-id="185">주문접수</button>
+							<button data-element-id="186">확장메뉴</button>
+						</div>
+					</div>
+					<!--// 왼쪽 하단 끝 -->
+				</div>
+				<!--// ++++ 왼쪽 끝 ++++-->
+
+				<!--++++ 오른쪽 ++++-->
+				<div class="card right_panel" data-element-id="187">
+					<!-- 카테고리 -->
+					<div class="categories" data-element-id="188">
+						<div class="swiper catSwiper" data-element-id="189">
+							<div class="swiper-wrapper" data-element-id="190">
+								<div class="swiper-slide active" data-element-id="191">
+									<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="192">
+									커피
+								</div>
+								<div class="swiper-slide" data-element-id="193">
+									<img src="/public/front/dabory/pos/images/icn_cloth.webp" alt="옷" data-element-id="194">
+									옷
+								</div>
+								<div class="swiper-slide" data-element-id="195">
+									<img src="/public/front/dabory/pos/images/icn_cosmetic.webp" alt="화장품" data-element-id="196">
+									화장품
+								</div>
+								<div class="swiper-slide" data-element-id="197">
+									<img src="/public/front/dabory/pos/images/icn_furniture.webp" alt="가구" data-element-id="198">
+									가구
+								</div>
+								<div class="swiper-slide" data-element-id="199">
+									<img src="/public/front/dabory/pos/images/icn_camping.webp" alt="캠핑용품" data-element-id="200">
+									캠핑용품
+								</div>
+								<div class="swiper-slide" data-element-id="201">
+									<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="202">
+									커피1
+								</div>
+								<div class="swiper-slide" data-element-id="203">
+									<img src="/public/front/dabory/pos/images/icn_cloth.webp" alt="옷" data-element-id="204">
+									옷1
+								</div>
+								<div class="swiper-slide" data-element-id="205">
+									<img src="/public/front/dabory/pos/images/icn_cosmetic.webp" alt="화장품" data-element-id="206">
+									화장품1
+								</div>
+								<div class="swiper-slide" data-element-id="207">
+									<img src="/public/front/dabory/pos/images/icn_furniture.webp" alt="가구" data-element-id="208">
+									가구1
+								</div>
+								<div class="swiper-slide" data-element-id="209">
+									<img src="/public/front/dabory/pos/images/icn_camping.webp" alt="캠핑용품" data-element-id="210">
+									캠핑용품1
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-button-next" data-element-id="211"></div>
+							<div class="swiper-button-prev" data-element-id="212"></div>
+					</div>
+
+					<!-- 메뉴 -->
+					<div class="menu-grid" data-element-id="213">
+						<div class="menu-item" data-element-id="214">
+							<div class="name" data-element-id="215">아메리카노</div>
+							<div class="img" data-element-id="216">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="217"></div>
+							<div class="price" data-element-id="218">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="219">
+							<div class="name" data-element-id="220">아메리카노</div>
+							<div class="img" data-element-id="221">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="222"></div>
+							<div class="price" data-element-id="223">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="224">
+							<div class="name" data-element-id="225">아메리카노</div>
+							<div class="img" data-element-id="226">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="227"></div>
+							<div class="price" data-element-id="228">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="229">
+							<div class="name" data-element-id="230">아메리카노</div>
+							<div class="img" data-element-id="231">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="232"></div>
+							<div class="price" data-element-id="233">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="234">
+							<div class="name" data-element-id="235">아메리카노</div>
+							<div class="img" data-element-id="236">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="237"></div>
+							<div class="price" data-element-id="238">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="239">
+							<div class="name" data-element-id="240">아메리카노</div>
+							<div class="img" data-element-id="241">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="242"></div>
+							<div class="price" data-element-id="243">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="244">
+							<div class="name" data-element-id="245">아메리카노</div>
+							<div class="img" data-element-id="246">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="247"></div>
+							<div class="price" data-element-id="248">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="249">
+							<div class="name" data-element-id="250">아메리카노</div>
+							<div class="img" data-element-id="251">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="252"></div>
+							<div class="price" data-element-id="253">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="254">
+							<div class="name" data-element-id="255">아메리카노</div>
+							<div class="img" data-element-id="256">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="257"></div>
+							<div class="price" data-element-id="258">2,500원</div>
+						</div>
+						<div class="menu-item" data-element-id="259">
+							<div class="name" data-element-id="260">아메리카노</div>
+							<div class="img" data-element-id="261">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피" data-element-id="262"></div>
+							<div class="price" data-element-id="263">2,500원</div>
+						</div>
+						<!-- 빈 셀인 경우 -->
+						<div class="menu-item empty" data-element-id="264">
+						</div>
+						<!--// 빈 셀인 경우 끝 -->
+						<div class="menu-item empty" data-element-id="265">
+						</div>
+						<div class="menu-item empty" data-element-id="266">
+						</div>
+						<div class="menu-item empty" data-element-id="267">
+						</div>
+						<div class="menu-item empty" data-element-id="268">
+						</div>
+						<div class="menu-item empty" data-element-id="269">
+						</div>
+						<div class="menu-item empty" data-element-id="270">
+						</div>
+						<div class="menu-item empty" data-element-id="271">
+						</div>
+
+					</div>
+
+					<!-- 버튼 -->
+					<div class="bottom_buttons" data-element-id="272">
+						<div data-element-id="273"></div>
+						<div data-element-id="274"></div>
+						<div data-element-id="275"></div>
+						<div data-element-id="276">
+							<button class="btn_order btn_primary" data-element-id="277">
+								<span data-element-id="278">주문</span>
+								<img src="/public/front/dabory/pos/images/icn_order.webp" alt="주문" data-element-id="279">
+							</button>
+						</div>
+						<div data-element-id="280">
+							<button class="btn_credit btn_primary" data-element-id="281">
+								<span data-element-id="282">카드</span>
+								<img src="/public/front/dabory/pos/images/icn_credit.webp" alt="신용카드" data-element-id="283">
+							</button>
+						</div>
+						<div data-element-id="284">
+							<button class="btn_cash btn_primary" data-element-id="285">
+								<span data-element-id="286">현금</span>
+								<img src="/public/front/dabory/pos/images/icn_cash.webp" alt="현금" data-element-id="287">
+							</button>
+						</div>
+						<div data-element-id="288">
+							<button class="btn_mix btn_primary" data-element-id="289">
+								<span data-element-id="290">복합</span>
+								<img src="/public/front/dabory/pos/images/icn_mix.webp" alt="복합결제" data-element-id="291">
+							</button>
+						</div>
+						<div data-element-id="292">
+							<button class="btn_receipt btn_primary" data-element-id="293">
+								<span data-element-id="294">영수증</span>
+								<img src="/public/front/dabory/pos/images/icn_receipt.webp" alt="영수증관리" data-element-id="295">
+							</button>
+						</div>
+					</div>
+				</div>
+				<!--// ++++ 오른쪽 끝 ++++-->
+			</div>
+			<!--// main 끝 -->
+
+		</div>
+	</div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" data-element-id="296"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" data-element-id="297"></script>
+
+<script data-element-id="298">
+var swiper = new Swiper(".catSwiper", {
+	slidesPerView: 5,
+	spaceBetween: 3.6,
+	slidesOffsetBefore: 0.5,
+    navigation: {
+		nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+
+
+</body></html>

@@ -1,0 +1,16 @@
+{
+  "name": "css-to-tailwind-converter",
+  "version": "1.0.0",
+  "description": "Convert CSS to Tailwind CSS using Playwright and CDP",
+  "main": "converter.js",
+  "scripts": {
+    "convert": "node converter.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "clean-css": "^5.3.3",
+    "css-to-tailwind-translator": "^1.0.0",
+    "inline-style-expand-shorthand": "^1.6.0",
+    "jsdom": "^23.0.0"
+  }
+}

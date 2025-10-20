@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS 기본</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="content pos basic">
+    <div class="row">
+        <div class="col-xl-12" >
+
+			<!-- 헤더 -->
+			<div class="header">
+				<div class="logo_wrap">
+					<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" alt="로고">
+						<text x="10" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">POS</text>
+					</svg>
+				</div>
+				<div class="info">
+					<div>
+						<dl>
+							<dt>매장명 : </dt>
+							<dd>(주) 다보리</dd>
+						</dl>
+						<dl>
+							<dt>포스번호 : </dt>
+							<dd>01</dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt>판매원 : </dt>
+							<dd>홍길동</dd>
+						</dl>
+						<dl>
+							<dt>영업일자 : </dt>
+							<dd>2025-10-20 (목)</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="time">2025-09-10 14:32 (목)</div>
+			</div>
+			<!--// 헤더 끝 -->
+
+			<!-- main -->
+			<div class="main">
+
+				<!-- ++++ 왼쪽 ++++-->
+				<div class="left_panel">
+					<!-- 품목 리스트 -->
+					<div class="card order">
+						<div class="tb_header">
+							<table >
+								<thead>
+									<tr>
+										<th class="num">번호</th>
+										<th class="name">메뉴명</th>
+										<th class="unite">단가</th>
+										<th class="ammount">수량</th>
+										<th class="discount">할인</th>
+										<th class="price">금액</th>
+										<th class="extra scroll-fix">비고</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="tb_body">
+							<table>
+								<tbody>
+									<tr>
+										<td class="num">000</td>
+										<td class="name">품목명이 나옵니다.</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra">보류</td>
+									</tr>
+
+									<tr>
+										<td class="num">000</td>
+										<td class="name">품목명이 나옵니다.</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra">보류</td>
+									</tr>
+									<tr>
+										<td class="num">000</td>
+										<td class="name">품목명이 나옵니다.</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra">보류</td>
+									</tr>
+									<tr>
+										<td class="num">000</td>
+										<td class="name">품목명이 나옵니다.</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra">보류</td>
+									</tr>
+									<tr>
+										<td class="num">000</td>
+										<td class="name">품목명이 나옵니다.</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra">보류</td>
+									</tr>
+									<tr>
+										<td class="num">000</td>
+										<td class="name">품목명이 나옵니다.</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra">보류</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tb_footer">
+							<table>
+								<tfoot>
+									<tr>
+										<td class="num"></td>
+										<td class="name">합계</td>
+										<td class="unite">000,000</td>
+										<td class="ammount">000</td>
+										<td class="discount">-00,000</td>
+										<td class="price">0,000,000</td>
+										<td class="extra scroll-fix"></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="action_buttons">
+						  <button type="button" class="btn_primary">전체취소</button>
+						  <button type="button" class="btn_primary">선택취소</button>
+						  <button type="button" class="btn_primary">할인처리</button>
+						  <button type="button" class="btn_primary">수량변경</button>
+						   <button type="button" class="btn_secondary"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" alt="더하기"><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+						  <button type="button" class="btn_secondary"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" alt="빼기"><line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+						  <button type="button" class="btn_secondary"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" alt="위로"><polyline points="4,12 10,6 16,12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+						  <button type="button" class="btn_secondary"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" alt="아래로"><polyline points="4,8 10,14 16,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+						</div>
+					</div>
+					<!-- 품목 리스트 끝 -->
+
+					<!-- 왼쪽 하단 -->
+					<div class="payment">
+						<!-- 결제내용 -->
+						<div class="card pay_info">
+							<!--탭 메뉴 -->
+							<ul class="nav nav-tabs" id="paymentTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="tab1" data-bs-toggle="tab"	data-bs-target="#tab1_cont" type="button" role="tab" aria-controls="tab1_cont"aria-selected="true">결제정보</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#tab2_cont" type="button" role="tab" aria-controls="tab2_cont" aria-selected="false">결제내역</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#tab3_cont" type="button" role="tab" aria-controls="tab3_cont" aria-selected="false">회원정보</button>
+								</li>
+							</ul>
+							<!-- 내용 -->
+							<div class="tab-content" id="paymentTabContent">
+								<div class="amount_info tab-pane fade show active" id="tab1_cont" role="tabpanel" aria-labelledby="tab1">
+									<dl>
+										<dt class="total">총 금액</dt>
+										<dd>0,000,000원</dd>
+									</dl>
+									<dl class="discount">
+										<dt>할인금액</dt>
+										<dd>- 000,000원</dd>
+									</dl>
+									<dl class="to_receive">
+										<dt>받을금액</dt>
+										<dd>0,000,000원</dd>
+									</dl>
+									<dl class="received">
+										<dt>받은금액</dt>
+										<dd>0,000,000원</dd>
+									</dl>
+									<dl class="change">
+										<dt>거스름돈</dt>
+										<dd>0,000,000원</dd>
+									</dl>
+								</div>
+								<div class="method_info tab-pane fade" id="tab2_cont" role="tabpanel" aria-labelledby="tab2">
+									<dl class="credit">
+										<dt>신용카드</dt>
+										<dd>0,000,000원</dd>
+									</dl>
+									<dl class="cash">
+										<dt>현금</dt>
+										<dd>- 000,000원</dd>
+									</dl>
+									<dl class="total">
+										<dt>결제금액</dt>
+										<dd>0,000,000원</dd>
+									</dl>
+								</div>
+								<div class="mem_info tab-pane fade" id="tab3_cont" role="tabpanel" aria-labelledby="tab3">
+									<dl class="name">
+										<dt>이름</dt>
+										<dd>홍두깨</dd>
+									</dl>
+									<dl class="mob">
+										<dt>연락처</dt>
+										<dd>010-0000-0000</dd>
+									</dl>
+									<dl class="add">
+										<dt>주소</dt>
+										<dd>경상북도 대한시 민국구 만세동 동해물과 백두산이 마르고 닳도록</dd>
+									</dl>
+									<dl class="etc">
+										<dt>비고</dt>
+										<dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라 만세. 무궁화 삼천리 화려 강산. 대한사람 대한으로 길이 보전하세.</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<!-- 계산기 -->
+						<div class="card calcu">
+							<div class="result">0</div>
+							<div class="keypad">
+								<button>7</button><button>8</button><button>9</button>
+								<button>4</button><button>5</button><button>6</button>
+								<button>1</button><button>2</button><button>3</button>
+								<button>0</button><button>0</button><button>CC</button>
+								<button class="back"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" alt="지우기"><path d="M7 4L3 10L7 16H17V4H7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><line x1="9" y1="8" x2="13" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="13" y1="8" x2="9" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+								<button class="enter">Enter</button>
+							</div>
+						</div>
+
+						<!-- 버튼 -->
+						<div class="card pay_buttons">
+							<button><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" alt="프린트"><rect x="4" y="3" width="12" height="4" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="7" width="14" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="12" width="10" height="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="10" r="0.8" fill="currentColor"/></svg>프린트</button>
+							<button>웹정보</button>
+							<button>환전</button>
+							<button>주문접수</button>
+							<button>확장메뉴</button>
+						</div>
+					</div>
+					<!--// 왼쪽 하단 끝 -->
+				</div>
+				<!--// ++++ 왼쪽 끝 ++++-->
+
+				<!--++++ 오른쪽 ++++-->
+				<div class="card right_panel">
+					<!-- 카테고리 -->
+					<div class="categories">
+						<div class="swiper catSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide active">
+									<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" alt="커피"><path d="M8 15h20v12a6 6 0 01-6 6h-8a6 6 0 01-6-6V15z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M28 20h2a3 3 0 010 6h-2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v-2m6 2v-2m6 2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+									커피
+								</div>
+								<div class="swiper-slide">
+									<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" alt="옷"><path d="M14 8l-8 6v18h28V14l-8-6-3 3a3 3 0 01-6 0l-3-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+									옷
+								</div>
+								<div class="swiper-slide">
+									<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" alt="화장품"><rect x="15" y="8" width="10" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="24" width="14" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15" y1="12" x2="25" y2="12" stroke="currentColor" stroke-width="2"/></svg>
+									화장품
+								</div>
+								<div class="swiper-slide">
+									<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" alt="가구"><path d="M8 18h24v8H8z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="10" y1="26" x2="10" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="30" y1="26" x2="30" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 18v-4a4 4 0 018 0v4m8-4a4 4 0 018 0v4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+									가구
+								</div>
+								<div class="swiper-slide">
+									<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" alt="캠핑용품"><path d="M20 8l-12 24h24L20 8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><line x1="6" y1="32" x2="34" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="14" y1="20" x2="26" y2="20" stroke="currentColor" stroke-width="2"/></svg>
+									캠핑용품
+								</div>
+								<div class="swiper-slide">
+									<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피">
+									커피1
+								</div>
+								<div class="swiper-slide">
+									<img src="/public/front/dabory/pos/images/icn_cloth.webp" alt="옷">
+									옷1
+								</div>
+								<div class="swiper-slide">
+									<img src="/public/front/dabory/pos/images/icn_cosmetic.webp" alt="화장품">
+									화장품1
+								</div>
+								<div class="swiper-slide">
+									<img src="/public/front/dabory/pos/images/icn_furniture.webp" alt="가구">
+									가구1
+								</div>
+								<div class="swiper-slide">
+									<img src="/public/front/dabory/pos/images/icn_camping.webp" alt="캠핑용품">
+									캠핑용품1
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+					</div>
+
+					<!-- 메뉴 -->
+					<div class="menu-grid">
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<div class="menu-item">
+							<div class="name">아메리카노</div>
+							<div class="img">	<img src="/public/front/dabory/pos/images/icn_cofee.webp" alt="커피"></div>
+							<div class="price">2,500원</div>
+						</div>
+						<!-- 빈 셀인 경우 -->
+						<div class="menu-item empty">
+						</div>
+						<!--// 빈 셀인 경우 끝 -->
+						<div class="menu-item empty">
+						</div>
+						<div class="menu-item empty">
+						</div>
+						<div class="menu-item empty">
+						</div>
+						<div class="menu-item empty">
+						</div>
+						<div class="menu-item empty">
+						</div>
+						<div class="menu-item empty">
+						</div>
+						<div class="menu-item empty">
+						</div>
+
+					</div>
+
+					<!-- 버튼 -->
+					<div class="bottom_buttons">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div>
+							<button class="btn_order btn_primary">
+								<span>주문</span>
+								<img src="/public/front/dabory/pos/images/icn_order.webp" alt="주문">
+							</button>
+						</div>
+						<div>
+							<button class="btn_credit btn_primary">
+								<span>카드</span>
+								<img src="/public/front/dabory/pos/images/icn_credit.webp" alt="신용카드">
+							</button>
+						</div>
+						<div>
+							<button class="btn_cash btn_primary">
+								<span>현금</span>
+								<img src="/public/front/dabory/pos/images/icn_cash.webp" alt="현금">
+							</button>
+						</div>
+						<div>
+							<button class="btn_mix btn_primary">
+								<span>복합</span>
+								<img src="/public/front/dabory/pos/images/icn_mix.webp" alt="복합결제">
+							</button>
+						</div>
+						<div>
+							<button class="btn_receipt btn_primary">
+								<span>영수증</span>
+								<img src="/public/front/dabory/pos/images/icn_receipt.webp" alt="영수증관리">
+							</button>
+						</div>
+					</div>
+				</div>
+				<!--// ++++ 오른쪽 끝 ++++-->
+			</div>
+			<!--// main 끝 -->
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
