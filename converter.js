@@ -164,11 +164,16 @@ class CSSToTailwindConverter {
         
         for (const rule of rules) {
             const [selector, declarations] = rule.split('{');
-            const props = declarations.replace('}', '').split(';').filter(p => p.trim());
+            const props = this.splitDeclarations(declarations.replace('}', ''));
             const expandedProps = [];
             
             for (const prop of props) {
-                const [property, value] = prop.split(':').map(s => s.trim());
+                const colonIndex = prop.indexOf(':');
+                if (colonIndex === -1) {
+                    continue;
+                }
+                const property = prop.slice(0, colonIndex).trim();
+                const value = prop.slice(colonIndex + 1).trim();
                 if (property && value) {
                     // Create an object with the single property
                     const styleObj = {};
@@ -191,6 +196,72 @@ class CSSToTailwindConverter {
         }
         
         return expandedRules.join('\n');
+    }
+
+    splitDeclarations(declarationBlock) {
+        const declarations = [];
+        let current = '';
+        let depth = 0;
+        let inQuote = null;
+        let escapeNext = false;
+        
+        for (const char of declarationBlock) {
+            if (escapeNext) {
+                current += char;
+                escapeNext = false;
+                continue;
+            }
+            
+            if (char === '\\') {
+                current += char;
+                escapeNext = true;
+                continue;
+            }
+            
+            if (inQuote) {
+                current += char;
+                if (char === inQuote) {
+                    inQuote = null;
+                }
+                continue;
+            }
+            
+            if (char === '"' || char === "'") {
+                inQuote = char;
+                current += char;
+                continue;
+            }
+            
+            if (char === '(') {
+                depth++;
+                current += char;
+                continue;
+            }
+            
+            if (char === ')') {
+                depth = Math.max(0, depth - 1);
+                current += char;
+                continue;
+            }
+            
+            if (char === ';' && depth === 0) {
+                const trimmed = current.trim();
+                if (trimmed) {
+                    declarations.push(trimmed);
+                }
+                current = '';
+                continue;
+            }
+            
+            current += char;
+        }
+        
+        const final = current.trim();
+        if (final) {
+            declarations.push(final);
+        }
+        
+        return declarations;
     }
 
     async addElementIds() {
